@@ -1,0 +1,18 @@
+body { margin:0;background:#1b2727; font-family: Trebuchet MS, Arial, sans-serif;}
+div {border-style: none;}
+p,h1 {text-align: center;}
+.mnu {color:white;width:100%;transition: 0.5s;  border-top: 2px solid transparent; border-bottom: 2px solid transparent;}
+.mnu span{margin-right: 20px; margin-left: 20px; font-size: 20px;}
+.mnu>p {margin-left: 20px;}
+span>.small-text{margin-left: 0px; font-size: 0.6em;}
+.mnu:nth-child(even) {background-color: #8785A1;}
+.mnu:nth-child(odd) {background-color: #ADAACE;}
+.mnu:hover{background-color: #5B587D;border-top: 2px solid white; border-bottom: 2px solid white; border-left: solid white 1px; border-right: solid white 1px;}
+.main-mnu {padding:35px 0px 35px 0px; width:50%; margin:auto; min-width: 300px;}
+.main-mnu input{margin:auto;}
+.main-mnu p{text-align: left;}
+header, footer {background-color: #2f413b; color: tomato;text-shadow: black 1px 1px 2px; padding: 10px 0px 10px 0px;}
+footer {width:50%; margin:auto;  display: flex; align-items: center; justify-content: center;}
+footer a{ text-decoration: none; color: tomato;}
+[type="checkbox"]:checked +label{text-decoration: line-through; color: darkgrey;text-shadow: black 1px 1px 2px;}
+::selection { text-shadow: silver -1px -1px 1px}
