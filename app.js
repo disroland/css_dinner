@@ -73,3 +73,10 @@ rem2[j].onclick = function (){
 }
 }
 // mouse
+let hiddenInfo = document.querySelector('.hidden-info');
+input.onfocus = function(){
+	hiddenInfo.classList.add('visible');
+}
+input.onblur = function(){
+	hiddenInfo.classList.remove('visible');
+}

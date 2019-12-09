@@ -2,9 +2,9 @@ body { margin:0;background:#1b2727; font-family: Trebuchet MS, Arial, sans-serif
 div {border-style: none;}
 p,h1 {text-align: center;}
 .mnu {color:white;width:100%;transition: 0.5s;  border-top: 2px solid transparent; border-bottom: 2px solid transparent;
-display:flex;
--ms-align-items: center;
-align-items: center;
+	display:flex;
+	-ms-align-items: center;
+	align-items: center;
 }
 .mnu span{margin-right: 20px; margin-left: 20px; font-size: 20px;}
 .mnu>p {margin-left: 20px; width: 100%;}
@@ -33,7 +33,7 @@ footer a{ text-decoration: none; color: tomato;}
 	margin-right: 10px;
 }
 .form {
-	margin: 30px auto;
+	margin: 60px auto 0 auto;
 	width: 50%;
 	display: flex;
 }
@@ -41,4 +41,38 @@ footer a{ text-decoration: none; color: tomato;}
 	flex-grow: 1;
 }
 .form button {
-	}
+}
+
+.hidden-info {
+	font-size: 20px;
+	line-height: 40px;
+	display: inline-block;
+	background-color: #0053A5;
+	color: #fff;
+	border-radius: 7px;
+	min-height: 40px;
+	text-align: center;
+	position: relative;
+	left:50%;
+	transform: translateX(-50%);
+	bottom:80px;
+	padding: 0 10px 0 10px;
+	opacity: 0;
+	transition: .3s;
+}
+.hidden-info:after {
+	content: '';
+width: 0;
+height: 0;
+border-style: solid;
+position: absolute;
+border-width: 10px 10px 0 10px;
+border-color: #0053A5 transparent transparent transparent;
+left:40px;
+bottom: -10px;
+opacity: inherit;
+}
+
+.visible {
+	opacity: .9;
+}
